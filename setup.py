@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='mkdocs-your-plugin',
+    name='mkdocs-tree-title',
     version='0.1.0',
-    description='A MkDocs plugin',
-    long_description='',
+    description='A MkDocs plugin to add the tree titles on pages',
+    long_description='A MkDocs plugin that adds a tree title for each page. It is composed from the ancestors tree titles and the page title and it is set on the page as tree_title attribute.',
     keywords='mkdocs',
     url='',
-    author='Your Name',
-    author_email='your email',
+    author='George B',
+    author_email='pleat_man@yahoo.com',
     license='MIT',
     python_requires='>=2.7',
     install_requires=[
@@ -30,7 +30,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'mkdocs.plugins': [
-            'your-plugin = mkdocs_your_plugin.plugin:YourPlugin'
+            'tree-title = mkdocs_tree_title.plugin:TreeTitlePlugin'
         ]
     }
 )
